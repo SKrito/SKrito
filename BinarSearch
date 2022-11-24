@@ -1,0 +1,77 @@
+let Arr=[4,6,9,11,13,17,20] 
+function Search(Arr,e1){ 
+    let first=0; 
+    let last=Arr.length-1; 
+    let middle; 
+    let i=0; 
+    while (first<lost){ 
+        middle=Math.floor((first+last)/2); 
+        if(Arr[middle]===e1){ 
+            idx=1; 
+            break 
+        } 
+        if(Arr[middle]>e1){ 
+            last=middle+1; 
+        } 
+    } 
+    return idx 
+} 
+console.log(6) 
+ 
+let arr=[17,6,11,9,13,17] 
+for(let i=0;i<arr.length;i++){ 
+    for(let j=0;j<arr.length-1;j++){ 
+        if(arr[j]>arr[j+1]){ 
+            let p=arr[j] 
+            arr[j]=arr[j+1] 
+            arr[j+1]=p 
+        } 
+    } 
+} 
+function Search(Arr,e1){ 
+    let first=0; 
+    let last=Arr.length-1; 
+    let middle; 
+    let i=0; 
+    while (first<lost){ 
+        middle=Math.floor((first+last)/2); 
+        if(Arr[middle]===e1){ 
+            idx=1; 
+            break 
+        } 
+        if(Arr[middle]>e1){ 
+            last=middle+1; 
+        } 
+    } 
+    return idx 
+} 
+console.log(17) 
+ 
+let mas=[{name:'Filip',age:'13'},
+{name:'Ira',age:'15'},
+{name:'Leo',age:'17'}] 
+function Searhc(mas,e1){ 
+    let idx=-1; 
+    for(let i='0';i<mas.length;i++){ 
+        if(mas[i]===e1){ 
+            idx=i; 
+            break; 
+        } 
+    } 
+    return idx 
+} 
+console.log() 
+ 
+let Mas=[{name:'Ira',age:'15'},
+{name:'Filip',age:'13'},
+{name:'Leo',age:'17'}] 
+for(let i=0;i<Mas.length-1;i++){ 
+    for(let j=0;j<Mas.length-1;j++){ 
+        if(Mas[j]>Mas[j+1]){ 
+            let p=Mas[j] 
+            Mas[j]=Mas[j+1] 
+            Mas[j+1]=p 
+        } 
+    } 
+} 
+console.log() 
