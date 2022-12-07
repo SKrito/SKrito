@@ -1,0 +1,46 @@
+const todayYear = new Date().getFullYear()
+ 
+let position = ['Механік','Прибиральник','Менеджер','Кухар']
+
+class Employee{
+    constructor(firstName, lastName, phoneName, SequencePosition, StartWorkInTheCompany, EndWorkInTheCompany)
+    {
+        this.firstName = firstName
+        this.lastName = lastName
+        this.phoneName = phoneName
+        this.SequencePosition = SequencePosition
+        this.StartWorkInTheCompany = StartWorkInTheCompany
+        this.EndWorkInTheCompany = EndWorkInTheCompany
+    }
+
+    get position(){
+        return this._position
+    }
+    set position(value){
+        if (['Механік', 'Прибиральник', 'Менеджер', 'Кухар'].includes(value)) this._position = value
+                else this._position = false
+    }
+    get StartWorkInTheCompany() {
+        return this._StartWorkInTheCompany
+    }
+    set StartWorkInTheCompany(value){
+        if (value > todayYear) this._StartWorkInTheCompany = false
+                else this._StartWorkInTheCompany = value
+    }
+    get EndWorkInTheCompany() {
+        return this._EndWorkInTheCompany
+    }
+    set EndWorkInTheCompany(value) {
+        if (value < this._EndWorkInTheCompany) this._EndWorkInTheCompany = false
+                else this._EndWorkInTheCompany = value
+    }
+}
+let employee = new Employee ('Vikas', 'Forest', 322147943275, 'Механік', 2010, 2022)
+let employee1 = new Employee ('Rob', 'Lorn', 654935023558, 'Прибиральник', 2009, 2022)
+let employee2 = new Employee ('Dima', 'Aren', 843923853099, 'Менеджер', 2008, 2022)
+let employee3 = new Employee ('Vasa', 'Konon', 572047824638, 'Кухар', 2010, 2022)
+
+            console.log(employee)
+            console.log(employee1)
+            console.log(employee2)
+            console.log(employee3)
