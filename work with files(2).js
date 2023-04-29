@@ -12,15 +12,15 @@ verify(0)
 verify(1)
 
  
- //3 видалення по айд
+ // 3 видалення по айд
 dell(1)
  
- //4 зміна по айді
+ // 4 зміна по айді
 change(0,'La Ferrari','SF90', 'red', 19162500)
 
 
 
- //запис
+ // Запис
 function write(arr){
     fs.writeFileSync('./car.csv', JSON.stringify(arr), 'utf-8');
 }
